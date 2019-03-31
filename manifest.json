@@ -1,0 +1,16 @@
+{
+  "manifest_version": 2,
+  "name": "Glared",
+  "version": "0.1.0",
+  "description": "Makes websites darker.",
+  "icons": {
+    "48": "icons/glared-48.png",
+    "96": "icons/glared-96.png"
+  },
+  "content_scripts": [
+    {
+      "matches": ["*://*/*"],
+      "js": ["glared.js"]
+    }
+  ]
+}
